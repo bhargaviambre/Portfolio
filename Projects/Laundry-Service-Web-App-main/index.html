@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Services Hero Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="home" class="page">
+    <div class="head">
+    <h2 id="logo">Logo</h2>  
+    <div class="nav">
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#quality">About Us</a>
+        <a href="#footer">Contact Us</a>
+    </nav>
+    </div>
+    <strong>Username</strong>
+    </div>
+
+    <div class="hero">
+    <div class="content">
+    
+    <p>Revitalize Your Clothes With Expert 
+    <span style="color: blue;">Laundry Services!</span></p>
+    <p id="para">From premium dry cleaning to swift wash and fold, we deliver care and convinience. schedule a pickup and rediscover the freshness of your clothes today!</p>
+    
+    <a href="#services" class="book">Book a service today!</a>
+    </div>
+    
+    <div class="hero-img">
+    <img src="laundry.jpg" alt="">
+    </div>
+    </div>
+
+<footer class="stats">
+<p id="ach">Our Achievements</p>
+<div class="stat-box">
+                <h2>15+</h2>
+                <p>Laundry Services</p>
+            </div>
+                <div class="stat-box">
+                <h2>240+</h2>
+                <p>Happy Customers</p>
+            </div>
+                <div class="stat-box">
+                <h2>2+ Yrs</h2>
+                <p>Experience</p>
+            </div>
+        </footer>
+</section>
+    
+        <section id="services" class="page">
+         <div class="booking-section" id="services">
+         
+            <div class="servdiv1">
+        
+        <h1>Our Services</h1>
+        <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
+        <hr>
+        
+        <div class="service">
+        <p> Dry Cleaning <span style="color: blue;">₹200.00</span></p> 
+        <button class="btn" onclick="toggleItem(this, 'dry','Dry Cleaning',200)">Add Item ➕</button>
+        </div>
+
+        <div class="service">
+        <p> Wash & Fold = <span style="color: blue;">₹100.00</span></p>
+        <button class="btn" onclick="toggleItem(this,'wash','Wash & Fold',100)">Add Item ➕</button>
+        </div>
+
+        <div class="service">
+        <p> Ironing = <span style="color: blue;">₹30.00</span></p>
+        <button class="btn" onclick="toggleItem(this,'iron','Ironing',30)">Add Item ➕</button>
+        </div>
+
+        <div class="service">
+        <p> Stain Removal = <span style="color: blue;">₹500.00</span></p>
+        <button class="btn" onclick="toggleItem(this,'stain','Stain Removal',500)">Add Item ➕</button>
+        </div>
+
+        <div class="service">
+        <p> Leather & Suade Cleaning = <span style="color: blue;">₹999.00</span></p>
+        <button class="btn" onclick="toggleItem(this,'leather','Leather & Suade Cleaning',999)">Add Item ➕</button>
+        </div>
+
+        <div class="service">
+        <p> Wedding Dress Cleaning= <span style="color: blue;">₹2800.00</span></p>
+        <button class="btn" onclick="toggleItem(this,'wedding','Wedding Dress Cleaning',2800)">Add Item ➕</button>
+        </div>
+        <hr>
+        <p style="color: blue;">➕ Add the items to the cart and book now</p>
+    </div>
+
+    <div class="servdiv2">
+        
+        <div class="cart-box">
+        <h1>Added Items</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Service Name</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+
+            <tbody id="Cart-Items">
+            </tbody>
+        </table>
+
+        <div class="total">
+            <h4>Total Amount</h4>
+            <h4 id="total">₹0.00</h4>
+        </div>
+        </div>
+
+        <div class="booking-box">
+            <h3>Book Now</h3>
+            <input type="text" id="name" placeholder="Full Name" required>
+           
+            <div class="row">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+            </div>
+
+            <button onclick="bookNow()">Book Now</button>
+            <p id="msg"></p>
+
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="page">
+    <div class="quality">
+        <div class="quality-box">
+            <img src="washing.jpg" alt="">
+        <h3>Premium Services</h3>
+        <p>Elevate Your Wardrobe with our meticuloous dry cleaning</p>   
+    </div>
+
+        <div class="quality-box">
+            <img src="customer.jpg" alt="">
+            <h3>Quick Support</h3>
+            <p>We're committed to providing prompt solution</p>
+        </div>
+
+        <div class="quality-box">
+            <img src="delivery.jpg" alt="">
+            <h3>Hassle Free Delivery</h3>
+            <p>Enjoy Seamless Service With Convenient Pickup and Delivery</p>
+
+        </div>
+        <div class="quality-box">
+            <img src="price.jpg" alt="">
+            <h3>Affordable Prices</h3>
+            <p>Experience Exceptional Care at Affordable Prices</p>
+        </div>    
+    </div>
+
+<div class="newsletter">
+<div class="left-news">
+<h2>Subscribe To Our <br> Newsletter</h2>
+</div>
+    
+<div class="right-news">
+<input type="text" placeholder="Full Name">
+<input type="email" placeholder="Email">
+<button>Subscribe</button>
+</div>
+</div>
+
+<footer class="footer">
+    <div class="footer-box">
+        <h2>Logo</h2>
+        <p>About Us</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, praesentium harum.</p>
+    </div>
+
+    <div class="footer-box">
+        <h3>Important Links</h3>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+        <p>Refund Policy</p>
+    </div>
+
+    <div class="footer-box">
+        <h3>Contact</h3>
+        <p>mail@site.com</p>
+        <p>+91 9123456780</p>
+    </div>
+
+    <div class="footer-box">
+        <h3>Follow Us</h3>
+        <img src="insta.png" alt="">
+        <img src="facebook.png" alt="">
+        <img src="twitter.png" alt="">
+        <img src="youtube.png" alt="">
+    </div>    
+    
+</footer>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+    emailjs.init({
+        publicKey:"D2DzUb4UzEYFAwBTJ"
+    })
+</script>
+<script src="script.js"></script>
+</body>
+</html>
